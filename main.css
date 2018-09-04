@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -20,6 +21,13 @@ header {
 
 .nav {
   padding-right: 30px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: grey;
 }
 
 .nav__item {
@@ -28,7 +36,7 @@ header {
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: pink;
+  background: white;
 }
 
 .background-image {
@@ -47,7 +55,9 @@ header {
 }
 
 .hero-content {
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  color: white;
 }
 
 .section {
@@ -69,11 +79,31 @@ header {
   padding-bottom: 20px;
 }
 
-.contact-list {
-  padding: 0;
-  list-style: circle inside;
+.contact-links li {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  list-style-type: none;
 }
 
-@media only screen (max-width: 600px) {
-  /* do whatever you want here */
+.contact-links a {
+  text-decoration: none;
+}
+
+p {
+  color: grey;
+}
+
+h2 {
+  letter-spacing: .2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #7690af;
+}
+
+a:hover  {
+  text-decoration: underline;
+  color: #2c3638;
 }
