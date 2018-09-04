@@ -2,6 +2,11 @@
   --header-height: 70px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -62,7 +67,7 @@ header {
 
 .section {
   padding: 30px;
-}
+}s
 
 .hero-content {
   max-width: 300px;
