@@ -10,18 +10,20 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background: whitesmoke;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  background: white;
+  background: whitesmoke;
   height: var(--header-height);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  border-bottom: 1px solid rgb(211, 211, 211, 0.75);
 }
 
 .nav {
@@ -33,6 +35,11 @@ header {
 .nav a {
   text-decoration: none;
   color: grey;
+  background-color: whitesmoke;
+}
+
+.nav a:hover {
+  text-decoration: none;
 }
 
 .nav__item {
@@ -41,15 +48,18 @@ header {
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: white;
 }
 
 .background-image {
+  width: 100%;
+  height: 100vh;
   z-index: -10;
   position: absolute;
-  width: 100%;
   object-fit: cover;
-  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-size: auto;
+  display: block;
 }
 
 .hero-container {
@@ -62,15 +72,17 @@ header {
 .hero-content {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  color: white;
+  color: #F8F8F8;
+  max-width: 300px;
+}
+
+.hero-content h1 {
+  letter-spacing: .1rem;
+  font-size: 40px;
 }
 
 .section {
   padding: 30px;
-}s
-
-.hero-content {
-  max-width: 300px;
 }
 
 .content-container {
@@ -82,33 +94,54 @@ header {
 .content h2 {
   padding-top: 20px;
   padding-bottom: 20px;
+  letter-spacing: .1rem;
+}
+
+.experience-list ul {
+  list-style-type: none;
+}
+
+.experience-list li {
+  margin: 10px 14px;
+  padding: 10px 14px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .contact-links li {
+  font-size: 32px;
   display: inline-block;
   padding: 10px;
   text-align: center;
   list-style-type: none;
 }
 
-.contact-links a {
-  text-decoration: none;
-}
-
 p {
   color: grey;
 }
 
-h2 {
-  letter-spacing: .2rem;
-}
-
 a {
   text-decoration: none;
-  color: #7690af;
+  color: #3D5D69;
 }
 
-a:hover  {
+a:hover {
   text-decoration: underline;
-  color: #2c3638;
+  color: #3D5D69;
+}
+
+/* Mobile */
+@media screen and (max-width: 617px) {
+  .background-image {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+  }
+  .hero-container {
+    height: 45vh;
+  }
+
+  nav .contact {
+    display: none;
+  }
 }
