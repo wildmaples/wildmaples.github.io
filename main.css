@@ -10,19 +10,20 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background: whitesmoke;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  background: white;
+  background: whitesmoke;
   height: var(--header-height);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border-bottom: 0.5px solid grey;
+  border-bottom: 1px solid rgb(211, 211, 211, 0.75);
 }
 
 .nav {
@@ -34,6 +35,7 @@ header {
 .nav a {
   text-decoration: none;
   color: grey;
+  background-color: whitesmoke;
 }
 
 .nav a:hover {
@@ -46,19 +48,18 @@ header {
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: white;
 }
 
 .background-image {
+  width: 100%;
+  height: 100vh;
   z-index: -10;
   position: absolute;
-  width: 100%;
   object-fit: cover;
   margin: 0px;
   padding: 0px;
   background-size: auto;
   display: block;
-  height: 100vh;
 }
 
 .hero-container {
@@ -71,8 +72,13 @@ header {
 .hero-content {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  color: white;
+  color: #F8F8F8;
   max-width: 300px;
+}
+
+.hero-content h1 {
+  letter-spacing: .1rem;
+  font-size: 40px;
 }
 
 .section {
@@ -88,6 +94,7 @@ header {
 .content h2 {
   padding-top: 20px;
   padding-bottom: 20px;
+  letter-spacing: .1rem;
 }
 
 .experience-list ul {
@@ -109,28 +116,32 @@ header {
   list-style-type: none;
 }
 
-.contact-links a {
-  text-decoration: none;
-}
-
 p {
   color: grey;
 }
 
-h2 {
-  letter-spacing: .2rem;
-}
-
 a {
   text-decoration: none;
-  color: #355A74;
+  color: #3D5D69;
 }
 
-a:hover  {
+a:hover {
   text-decoration: underline;
-  color: #355A74;
+  color: #3D5D69;
 }
 
 /* Mobile */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 617px) {
+  .background-image {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+  }
+  .hero-container {
+    height: 45vh;
+  }
+
+  nav .contact {
+    display: none;
+  }
 }
