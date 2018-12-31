@@ -98,7 +98,7 @@ header {
 }
 
 .experience-list ul {
-  list-style-type: none;
+  list-style: none;
 }
 
 .experience-list li {
