@@ -98,6 +98,8 @@ a:hover {
 }
 
 /* Mobile */
-@media screen and (max-width: 617px) {
-/* TO DO */
+@media screen and (max-width: 530px) {
+  body {
+    padding: 0 30px;
+  }
 }
