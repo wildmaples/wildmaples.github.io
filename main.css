@@ -24,6 +24,7 @@ body {
 .title {
   font-size: 15px;
   letter-spacing: .1rem;
+  color: darkslategray;
 }
 
 /* for a subtitle in the future? */
@@ -84,7 +85,7 @@ body {
 }
 
 p {
-  color: grey;
+  color: black;
 }
 
 a {
