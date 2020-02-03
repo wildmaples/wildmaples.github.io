@@ -1,2 +1,2 @@
 # wildmaples.github.io
-Viewable @ www.mapleong.me 
+www.mapleong.me 
